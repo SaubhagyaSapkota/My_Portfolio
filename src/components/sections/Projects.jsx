@@ -14,15 +14,77 @@ export const Projects = () => {
             Featured Projects
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {/* 1) IAM */}
+            <div
+              className="
+              glass p-6 rounded-xl border border-white/10 
+              hover:-translate-y-1 hover:border-blue-500/30
+              hover:shadow-[0_4px_20px_rgba(59,130,246,0.1)]
+              transition-all
+            "
+            >
+              <h3 className="text-xl font-bold mb-2">
+                Identity & Access Management
+              </h3>
+              <p className="text-gray-400 mb-4">
+                <li>
+                  A Production-ready authnetication and authorization system
+                  with secure login, email verification, and session logout
+                  flows.{" "}
+                </li>
+                <li>
+                  Implemented JWT-based authentication with access token and
+                  refresh token rotation, stored and validation through
+                  server-side.
+                </li>
+                <li>
+                  Role-based and Permission-based access control for fine
+                  grained authorization and protected APIs resources using
+                  custom middleware.
+                </li>
+              </p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                {["TypeScript", "Node.js", "Express.js", "PostgreSQL"].map(
+                  (tech, key) => (
+                    <span
+                      key={key}
+                      className="
+                      bg-blue-500/10 text-cyan-500 py-1 px-3 
+                      rounded-full text-sm
+                      transition
+                      hover:bg-blue-500/20 hover:-translate-y-0.5
+                      hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)]
+                    "
+                    >
+                      {tech}
+                    </span>
+                  )
+                )}
+              </div>
+              <div className="flex justify-between items-center ">
+                <a
+                  href="https://github.com/SaubhagyaSapkota/Book-recommendation-System/tree/master"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-cyan-400 hover:text-blue-300 transition-colors my-4"
+                >
+                  View Project →
+                </a>
+              </div>
+            </div>
+
+            {/* 2) Job Search */}
             <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition">
               <h3 className="text-xl font-bold mb-2">
                 {" "}
                 JobSearch: A full Stack Web Application
               </h3>
               <p className="text-gray-400 mb-4">
-                A job listing platform developed using MERN Stack. Implemented
-                features include user authentication, job posting, Job Search
-                and real time notification.
+                <li>A job listing platform developed using MERN Stack.</li>
+                <li>
+                  Implemented features include user authentication, job posting,
+                  Job Search and real time notification.
+                </li>
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
                 {["React", "Node.js", "ExpressJs", "MongoDB"].map(
@@ -50,6 +112,7 @@ export const Projects = () => {
                 </a>
               </div>
             </div>
+            {/* 3) Birdy */}
             <div
               className="
               glass p-6 rounded-xl border border-white/10 
@@ -62,10 +125,14 @@ export const Projects = () => {
                 Birdy: A Mobile Application for Bird Identification
               </h3>
               <p className="text-gray-400 mb-4">
-                ML-powered bird identification application where users can
-                identify the Bird based on their sound. Implemented features
-                include recording bird sound in real time and uploading the
-                recorded audio.
+                <li>
+                  ML-powered bird identification application where users can
+                  identify the Bird based on their sound.
+                </li>
+                <li>
+                  Implemented features include recording bird sound in real time
+                  and uploading the recorded audio.
+                </li>
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
                 {["Python", "React Native", "Django", "Jupyter Notebook"].map(
@@ -95,7 +162,8 @@ export const Projects = () => {
               </div>
             </div>
 
-            <div
+            {/* 4) Book */}
+            {/* <div
               className="
               glass p-6 rounded-xl border border-white/10 
               hover:-translate-y-1 hover:border-blue-500/30
@@ -137,8 +205,9 @@ export const Projects = () => {
                   View Project →
                 </a>
               </div>
-            </div>
+            </div> */}
 
+            {/* 5) Note */}
             <div
               className="
               glass p-6 rounded-xl border border-white/10 
@@ -149,8 +218,10 @@ export const Projects = () => {
             >
               <h3 className="text-xl font-bold mb-2">Quick Note</h3>
               <p className="text-gray-400 mb-4">
-                A simple application for taking simple notes developed using
-                MERN stack.
+                <li>
+                  A simple application for taking simple notes developed using
+                  MERN stack.
+                </li>
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
                 {["React", "ExpressJs", "MongoDB", "NodeJS"].map((tech) => (
