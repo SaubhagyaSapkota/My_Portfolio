@@ -63,7 +63,7 @@ export const Projects = () => {
               </div>
               <div className="flex justify-between items-center ">
                 <a
-                  href="https://github.com/SaubhagyaSapkota/Book-recommendation-System/tree/master"
+                  href="https://github.com/SaubhagyaSapkota/identity-and-access-management-system"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-cyan-400 hover:text-blue-300 transition-colors my-4"
@@ -154,7 +154,9 @@ export const Projects = () => {
               </div>
               <div className="flex justify-between items-center">
                 <a
-                  href="#"
+                  href="https://github.com/SaubhagyaSapkota/Bird-Identification-Through-Audio-Processing"
+                  target="_black"
+                  rel="noopener noreferrer"
                   className="text-cyan-400 hover:text-blue-300 transition-colors my-4"
                 >
                   View Project →
@@ -162,7 +164,51 @@ export const Projects = () => {
               </div>
             </div>
 
-            {/* 4) Book */}
+            {/* 4) Note */}
+            <div
+              className="
+              glass p-6 rounded-xl border border-white/10 
+              hover:-translate-y-1 hover:border-blue-500/30
+              hover:shadow-[0_4px_20px_rgba(59,130,246,0.1)]
+              transition-all
+            "
+            >
+              <h3 className="text-xl font-bold mb-2">Quick Note</h3>
+              <p className="text-gray-400 mb-4">
+                <li>
+                  A simple application for taking simple notes developed using
+                  MERN stack.
+                </li>
+              </p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                {["React", "ExpressJs", "MongoDB", "NodeJS"].map((tech) => (
+                  <span
+                    key={tech}
+                    className="
+                      bg-blue-500/10 text-cyan-500 py-1 px-3 
+                      rounded-full text-sm
+                      transition
+                      hover:bg-blue-500/20 hover:-translate-y-0.5
+                      hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)]
+                    "
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+              <div className="flex justify-between items-center">
+                <a
+                  href="https://github.com/SaubhagyaSapkota/Quick-Note-MERN"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-cyan-400 hover:text-blue-300 transition-colors my-4"
+                >
+                  View Project →
+                </a>
+              </div>
+            </div>
+
+            {/* 5) Book */}
             {/* <div
               className="
               glass p-6 rounded-xl border border-white/10 
@@ -206,50 +252,6 @@ export const Projects = () => {
                 </a>
               </div>
             </div> */}
-
-            {/* 5) Note */}
-            <div
-              className="
-              glass p-6 rounded-xl border border-white/10 
-              hover:-translate-y-1 hover:border-blue-500/30
-              hover:shadow-[0_4px_20px_rgba(59,130,246,0.1)]
-              transition-all
-            "
-            >
-              <h3 className="text-xl font-bold mb-2">Quick Note</h3>
-              <p className="text-gray-400 mb-4">
-                <li>
-                  A simple application for taking simple notes developed using
-                  MERN stack.
-                </li>
-              </p>
-              <div className="flex flex-wrap gap-2 mb-4">
-                {["React", "ExpressJs", "MongoDB", "NodeJS"].map((tech) => (
-                  <span
-                    key={tech}
-                    className="
-                      bg-blue-500/10 text-cyan-500 py-1 px-3 
-                      rounded-full text-sm
-                      transition
-                      hover:bg-blue-500/20 hover:-translate-y-0.5
-                      hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)]
-                    "
-                  >
-                    {tech}
-                  </span>
-                ))}
-              </div>
-              <div className="flex justify-between items-center">
-                <a
-                  href="https://github.com/SaubhagyaSapkota/Quick-Note-MERN"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-cyan-400 hover:text-blue-300 transition-colors my-4"
-                >
-                  View Project →
-                </a>
-              </div>
-            </div>
           </div>
 
           {/*  Small Projects Section */}
